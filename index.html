@@ -14,12 +14,12 @@
 <body>
 <main>
 <h1>Vista Reader – Privacy Policy</h1>
-<p>Last updated: 22 October 2026</p>
+<p>Last updated: 23 October 2026</p>
 
 <p>Vista Reader (package <code>com.vistareader.app</code>) is a text-to-speech book reader. This policy explains what happens to your data.</p>
 
 <h2>Summary</h2>
-<p>Vista Reader does not collect, store on any server, share or sell any personal data. The app has no internet permission, so it cannot send anything off your device.</p>
+<p>Vista Reader does not sell or share personal data and has no accounts. Your books, notes and reading data never leave your device. The app uses the internet only for two optional things you start yourself: downloading the AI music model, and sending a report about AI-generated music.</p>
 
 <h2>Data that stays on your device</h2>
 <ul>
@@ -27,6 +27,14 @@
   <li><strong>Reading data</strong> such as positions, bookmarks, notes, pronunciation words, settings and listening statistics are stored only on your phone.</li>
   <li><strong>Text recognition</strong> for photos and scanned PDFs runs on your device (Google ML Kit on-device model). Images are not uploaded.</li>
   <li><strong>Speech</strong> is produced by the text-to-speech engine installed on your phone. If you choose an engine voice marked "needs internet", that engine (not Vista Reader) handles the text under its own privacy policy.</li>
+  <li><strong>AI music</strong>: music is generated on your device by a downloaded model. The descriptions you type and the music created stay on your phone in the app's private storage, unless you send a report (see below).</li>
+</ul>
+
+<h2>Internet use</h2>
+<ul>
+  <li><strong>AI music model download (optional)</strong>: when you tap Download, Android's Download Manager fetches the model files (Stable Audio 3 Small Music, Stability AI Community License) from Hugging Face (<code>huggingface.co</code>). Like any download, Hugging Face receives your IP address and standard request information under its own privacy policy. Nothing about you, your books or your descriptions is sent.</li>
+  <li><strong>Reports about AI music (optional)</strong>: if you report a generated track, the app sends the developer the description you typed, the English description given to the model, the reason and note you chose, the track length, the model name, the app version and the time. The music itself and no device or account identifiers are sent. Reports are used only to review the content and improve the app's content filtering, and are deleted within 12 months.</li>
+  <li><strong>Google ML Kit</strong> (on-device text recognition) may send Google anonymous diagnostics such as performance and error metrics. Images and text are not sent.</li>
 </ul>
 
 <h2>Backups</h2>
@@ -34,6 +42,7 @@
 
 <h2>Permissions</h2>
 <ul>
+  <li><strong>Internet</strong>: only for the optional AI music model download and AI music reports described above.</li>
   <li><strong>Notifications</strong>: to show playback controls and the optional daily reading reminder.</li>
   <li><strong>Foreground service (media playback)</strong>: to keep reading when the screen is off.</li>
   <li><strong>Run at startup</strong>: to restore the daily reminder after the phone restarts.</li>
@@ -57,11 +66,11 @@
 
 <h1 lang="tr">Vista Reader – Gizlilik Politikası</h1>
 <div lang="tr">
-<p>Son güncelleme: 22 Ekim 2026</p>
+<p>Son güncelleme: 23 Ekim 2026</p>
 <p>Vista Reader (<code>com.vistareader.app</code>) bir metin okuma (TTS) kitap uygulamasıdır.</p>
 
 <h2>Özet</h2>
-<p>Vista Reader hiçbir kişisel veriyi toplamaz, sunucuya kaydetmez, paylaşmaz veya satmaz. Uygulamanın internet izni yoktur; cihazından dışarı hiçbir şey gönderemez.</p>
+<p>Vista Reader kişisel veri satmaz veya paylaşmaz, hesap yoktur. Kitapların, notların ve okuma verilerin cihazından hiç çıkmaz. Uygulama interneti yalnızca senin başlattığın iki isteğe bağlı iş için kullanır: yapay zekâ müzik modelini indirmek ve yapay zekâ ile üretilmiş bir müziği bildirmek.</p>
 
 <h2>Cihazında kalan veriler</h2>
 <ul>
@@ -69,13 +78,21 @@
   <li><strong>Okuma verileri</strong> (konum, yer imleri, notlar, telaffuz sözlüğü, ayarlar ve dinleme istatistikleri) yalnızca telefonunda saklanır.</li>
   <li><strong>Metin tanıma</strong> (fotoğraf ve taranmış PDF) cihaz üzerinde çalışır (Google ML Kit cihaz içi model). Görseller yüklenmez.</li>
   <li><strong>Konuşma</strong>, telefonunda yüklü metin okuma motoru tarafından üretilir. "İnternet gerekir" olarak işaretli bir ses seçersen metni Vista Reader değil, o motor kendi gizlilik politikasıyla işler.</li>
+  <li><strong>Yapay zekâ müziği</strong> indirilen bir modelle cihazında üretilir. Yazdığın tarifler ve oluşan müzikler, bildirim göndermedikçe (aşağıya bak) yalnızca telefonundaki özel alanda kalır.</li>
+</ul>
+
+<h2>İnternet kullanımı</h2>
+<ul>
+  <li><strong>Yapay zekâ müzik modeli indirme (isteğe bağlı)</strong>: İndir'e dokunduğunda Android İndirme Yöneticisi model dosyalarını (Stable Audio 3 Small Music, Stability AI Community License) Hugging Face'ten (<code>huggingface.co</code>) indirir. Her indirmede olduğu gibi Hugging Face, kendi gizlilik politikası kapsamında IP adresini ve standart istek bilgilerini görür. Senin, kitapların ya da tariflerin hakkında hiçbir şey gönderilmez.</li>
+  <li><strong>Yapay zekâ müziği bildirimi (isteğe bağlı)</strong>: Üretilen bir parçayı bildirirsen uygulama geliştiriciye yazdığın tarifi, modele verilen İngilizce açıklamayı, seçtiğin nedeni ve notu, parça süresini, model adını, uygulama sürümünü ve zamanı gönderir. Müziğin kendisi ve hiçbir cihaz/hesap kimliği gönderilmez. Bildirimler yalnızca içeriği incelemek ve içerik filtresini iyileştirmek için kullanılır, en geç 12 ay içinde silinir.</li>
+  <li><strong>Google ML Kit</strong> (cihaz içi metin tanıma) Google'a performans ve hata ölçümleri gibi anonim tanılama verileri gönderebilir. Görseller ve metinler gönderilmez.</li>
 </ul>
 
 <h2>Yedekler</h2>
 <p>Yedekler yalnızca sen istediğinde veya haftalık otomatik yedeği açtığında, seçtiğin klasöre kaydedilir. Google hesabında Android cihaz yedeği açıksa uygulama verileri ona dahil olabilir; bunu Vista Reader değil Android yönetir.</p>
 
 <h2>İzinler</h2>
-<p>Bildirimler (oynatma kontrolleri ve günlük hatırlatıcı), ön plan hizmeti (ekran kapalıyken okuma), açılışta çalışma (hatırlatıcıyı yeniden kurma), titreşim ve uyanık tutma. Kişiler, konum, mikrofon veya hesaplara erişim istenmez.</p>
+<p>İnternet (yalnızca yukarıdaki isteğe bağlı model indirme ve bildirim için), bildirimler (oynatma kontrolleri ve günlük hatırlatıcı), ön plan hizmeti (ekran kapalıyken okuma), açılışta çalışma (hatırlatıcıyı yeniden kurma), titreşim ve uyanık tutma. Kişiler, konum, mikrofon veya hesaplara erişim istenmez.</p>
 
 <h2>Reklam, analiz, hesap</h2>
 <p>Reklam yok, analiz veya takip aracı yok, kullanıcı hesabı yok.</p>
